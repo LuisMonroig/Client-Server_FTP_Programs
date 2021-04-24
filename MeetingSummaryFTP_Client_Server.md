@@ -1,28 +1,44 @@
-## Week 1
 
-### FTP Client / Server Project
+# FTP Client / Server Project
 
-#### Todo
-- [ ] Create github repo
-- [ ] Research the Engineering Design Process
-- [ ] Must read RFC 959, and any relevant updates, to ensure that the protocol is properly implemented
-- [ ] Research pros con python
-- [ ] Research pros con C# .net
-- [ ] Email profesor about which technology he recommends: c# .net or python.
+## Summary of Meeting 1
 
-#### FTP Client
+#### Instructions for the FTP Client implementation
 - [ ] The client should initiate a TCP connection with the server  
 - [ ] Client must be able to view any of the directories and download any of the available files via ___TCP___
 - [ ] The client must also be able to upload files and create new directories
 
-#### FTP Server
+#### Instructions for the FTP Server implementation
 - [ ] FTP server must include at least 3 directories with 5 files each
 - [ ] Transfer files to client
 
+#### Todo
+- [x] Create github repo
+- [x] Research the Engineering Design Process
+- [ ] Find and try to read RFC 959, and any relevant updates, to ensure that the protocol is properly implemented
+- [x] Research pros con python
+- [x] Research pros con C# .net
+- [ ] Email profesor about which technology he recommends: c# .net or python.
+<br>
 
-### Week 1 Summary
-<br>
-<br>
-<br>
+---
 
-## Week 2
+## Summary of Meeting 2
+
+#### Decisions made:
+-  Python will be used due to  the existence of incredibly useful and simple libraries and other  FTP projects online that are similar to ours.  
+- Added Ema and Mario to the github project
+- The project will be implemented using socket libraries instead of the built in library [ftplib](https://docs.python.org/3/library/ftplib.html).
+- Next meeting: Monday from 4pm to 5pm
+
+
+#### Todo
+- [x] Email professor to ask about which Engineering Design Process (EDP) should we use. (Luis)
+- [ ] Try to finish reading RFC 959. (All)
+- [x] Download or screen-record the classes about UDP (March 25) and TCP (March 30) that are about to be erased, in case they are necessary in the future. (Volunteer)
+- [ ] Research the following libraries: (All)
+    - [ ] import socket
+    - [ ] import sys
+    - [ ] import os
+    - [ ] import struct
+- [ ] Check if the code in other github profiles does work (clone/test), read it, and understand it. (Volunteer)
