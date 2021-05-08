@@ -20,7 +20,7 @@ M# FTP Client / Server Project
 -   [ ] Find and try to read RFC 959, and any relevant updates, to ensure that the protocol is properly implemented
 -   [x] Research pros con python
 -   [x] Research pros con C# .net
--   [ ] Email profesor about which technology he recommends: c# .net or python.
+-   [ ] Email professor about which technology he recommends: c# .net or python.
     <br>
 
 * * *
@@ -47,3 +47,24 @@ M# FTP Client / Server Project
 -   [ ] Check if the code in other github profiles does work (clone/test), read it, and understand it. (Volunteer)
 
 * * *
+
+## Summary of Meeting 3
+
+#### Decisions made:
+
+-   Read and build prototype
+-   Learn some GUI framework to use it for the project
+-   Research how to display the file explorer from a server to the client.
+
+#### Todo
+
+-   [ ] Try to finish reading RFC 959. (All)
+-   [ ] Research the following libraries: (All)
+    -   [ ] import socket
+    -   [ ] import sys
+    -   [ ] import os
+    -   [ ] import struct
+-   [ ] Read and fully understand the code in other github profiles and how it works (read it, and understand it) (All)
+
+### Next Meeting date
+- TBA
