@@ -134,9 +134,9 @@ The Qt framework has an desktop app that allows users to design UI and preview t
 
 The following images provide a good place to look for to find this desktop app:
 
-<img src = "FTP_project_images/QtDesigner.png" alt = " " width = 320 />
+<img src = "FTP_project_images/QtDesigner.PNG" alt = " " width = 320 />
 
-<img src = "FTP_project_images/QtDesigner2.png" alt = " " width = 350 />
+<img src = "FTP_project_images/QtDesigner2.PNG" alt = " " width = 350 />
 
 The goal is to find the following icon, to create a short cut by right clicking it and to drag and drop that shrotcut to your desktop for easier access.
 

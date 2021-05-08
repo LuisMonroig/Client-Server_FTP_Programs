@@ -124,7 +124,7 @@ requires the connection to be closed to indicate EOF (_e.g. stream transfer mode
 
     <!-- TODO: Add picture of data between two hosts-->
 
-    <img src = "FTP_project_images/TransferingDataBetweenHosts.png" alt = "FTP Components" width = 400 />
+    <img src = "FTP_project_images/TransferingDataBetweenHosts.PNG" alt = "FTP Components" width = 400 />
 
 Possible modifications of the repo found:
 
