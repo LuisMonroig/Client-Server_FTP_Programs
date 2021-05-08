@@ -33,7 +33,7 @@ img {
 }
 </style>
 
-<img src = "FTP_project_images/FTP_components.png" alt = "FTP Components" width = 400 />
+<img src="FTP_project_images/FTP_components.PNG" alt="FTP Components" width = 400 />
 
 ###### User FTP Process Requirements for File Transfer:
 
