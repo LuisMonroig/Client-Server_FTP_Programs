@@ -111,7 +111,7 @@ Notice that order affects the size. Also, you can use integers in the format str
 
 #### Summary of the PyQt5 library:
 
-The PyQt5 is a cross platform GUI designer framework that uses the famous Qt designer techonology but for python applications. Since it is not a built in module, it must be downloaded to your computer via a pip or conda install command.  
+The PyQt5 is a cross platform GUI designer framework that uses the famous Qt designer technology but for python applications. Since it is not a built in module, it must be downloaded to your computer via a pip or conda install command.  
 
 ###### Installation
 
@@ -120,7 +120,7 @@ The following pip commands (or the conda equivalents) should work for installing
 - pip install pyqt5-tools
 - pip install PyQt5Designer
 
-Once those are completed you can go ahead and write a simple GUI program. One of the most useful tools for this is the QtWidgets module from the PyQt5 module. As usuall you can use it as follows:
+Once those are completed you can go ahead and write a simple GUI program. One of the most useful tools for this is the QtWidgets module from the PyQt5 module. As usual you can use it as follows:
 
     from PyQt5 import QtWidgets
 
@@ -130,7 +130,7 @@ Always the QApplication, QMainWindow, and QLabel classes are used. Thus, for con
 
 This allows us for example to use app = QApplication(sys.argv) instead of app = QtWidgets.QApplication(sys.argv).
 
-The Qt framework has an desktop app that allows users to design UI and preview them with drag and drop features and can latter convert all the design into python code. After converting the desgin to python code you can edit the code to imporve the design further and add other details. The command pip install PyQt5Designer mentioned before already installs this desktop app for you. The tricky part know is to find it in you computer.
+The Qt framework has an desktop app that allows users to design UI and preview them with drag and drop features and can latter convert all the design into python code. After converting the design to python code you can edit the code to improve the design further and add other details. The command pip install PyQt5Designer mentioned before already installs this desktop app for you. The tricky part know is to find it in you computer.
 
 The following images provide a good place to look for to find this desktop app:
 
@@ -138,11 +138,11 @@ The following images provide a good place to look for to find this desktop app:
 
 <img src = "FTP_project_images/QtDesigner2.PNG" alt = " " width = 350 />
 
-The goal is to find the following icon, to create a short cut by right clicking it and to drag and drop that shrotcut to your desktop for easier access.
+The goal is to find the following icon, to create a short cut by right clicking it and to drag and drop that shortcut to your desktop for easier access.
 
-###### Converting a QT Desing to a Python Script
+###### Converting a QT Design to a Python Script
 - Save the design a local directory
-- Navigate to the path of that directory usign a terminal or cmd
+- Navigate to the path of that directory using a terminal or cmd
 - Use the following command convert the ui file into a py file:
     - pyuic5 -x name_file.ui -o name_python_file.py
 -Check if a file named name_python_file.py is in the directory
@@ -155,7 +155,7 @@ The goal is to find the following icon, to create a short cut by right clicking 
 In TCP the sockets are required to be a 4-tuple. <br>
         _e.g. (source IP, source port#, destination IP, destination port)_
 
--   [ ] Review socket.socket() parameters and meanning
+-   [ ] Review socket.socket() parameters and meaning
 
     -   [ ]
 
