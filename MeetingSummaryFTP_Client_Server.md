@@ -87,4 +87,48 @@
 - [ ] Read and understand the Ema's cod and the prototype code obtained from GitHub.
 - [ ] Continue to deepen our knowledge in the most relevant python classes.
 
+## Summary of Meeting 5:
+
+#### Decisions made:
+- We would built the project using Emanuel's tracer bullet code that connected the server and the client, was able to pass a pdf and text file and included a few os commands for the client to get info from the user.
+- The focus of the meeting would be to refactor the code and implement useful classes that follow the structure presented in Figure 1: Model for FTP Use, (see page 8 of the RFC 959).
+- The threading module was used to implement concurrency between the control and data connection.
+- All the team members agreed on the minimal requirements of the project.
+- Due to git's complexity, GitHub will only be used to push the work in separate files and not to merge the files and edit them collaborative.
+- Once the project's code has been completed, it will be pushed in its own folder.
+- In the future, when all team members learn GitHub really well, this team might use git's merge functionality.
+
+#### Todo
+
+- [ ] Complete the refactoring of the client side
+- [ ] Unit Test the client class
+    - [ ] Design the test  
+    - [ ] Run the test
+    - [ ] Record and present the results to team
+    - [ ] Push the test to a GitHub folder
+- [ ] Continue to implement concurrency in the server.py
+- [ ] Design a tracer bullet implementation of the GUI
+
 ---
+
+<!--
+
+## Summary of Meeting 6:
+
+#### Decisions made:
+
+"""                    - We would built the project using Emanuel's tracer bullet code that connected the server and the client, was able to pass a pdf and text file and included a few os commands for the client to get info from the user.
+                    - The focus of the meeting would be to refactor the code and implement useful classes that follow the structure presented in Figure 1: Model for FTP Use, (see page 8 of the RFC 959).
+                    - The threading module was used to implement concurrency between the control and data connection.
+                    - All the team members agreed on the minimal requirements of the project.
+                    - Due to git's complexity, GitHub will only be used to push the work in separate files and not to merge the files and edit them collaborative.
+                    - Once the project's code has been completed, it will be pushed in its own folder.
+                    - In the future, when all team members learn GitHub really well, this team might use git's merge functionality."""
+
+#### Todo
+
+- [ ] Refactor the server.py file into classes that follow the structure presented in Figure 1: Model for FTP Use, (see page 8 of the RFC 959).
+
+- [ ] Connect the tracer bullet implementation of the GUI to the client and server code
+
+-->
