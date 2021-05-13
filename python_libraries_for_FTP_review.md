@@ -1,11 +1,10 @@
-## Relevant Python Libraries for FTP implementation
+## Relevant Python Libraries to study for FTP implementation
 
--   [ ] [import socket (by Tech with Tim)](https://www.youtube.com/watch?v=3QiPPX-KeSc), [by Sentdex Part 1 (there are 3 parts and an additional video of making a chatroom with sockets)](https://www.youtube.com/watch?v=Lbfe3-v7yE0)
+-   [X] [import socket (by Tech with Tim)](https://www.youtube.com/watch?v=3QiPPX-KeSc), [by Sentdex Part 1 (there are 3 parts and an additional video of making a chatroom with sockets)](https://www.youtube.com/watch?v=Lbfe3-v7yE0)
 -   [X] [import threading (by Corey Schafer)](https://www.youtube.com/watch?v=IEEhzQoKtQU)
 -   [X] [import struct (by Asha Tutorials)](https://www.youtube.com/watch?v=y49OUKBCEek)
 -   [X] [import os (by Corey Schafer)](https://www.youtube.com/watch?v=tJxcKyFMTGo&t=43s)
--   [ ] [import sys (by Sentdex)](https://www.youtube.com/watch?v=rLG7Tz6db0w)
--   [ ] [PyQT5 by Tech With Tim](https://www.youtube.com/watch?v=-2uyzAqefyE&list=PLzMcBGfZo4-lB8MZfHPLTEHO9zJDDLpYj&index=2)
+-   [X] [PyQT5 by Tech With Tim](https://www.youtube.com/watch?v=-2uyzAqefyE&list=PLzMcBGfZo4-lB8MZfHPLTEHO9zJDDLpYj&index=2)
 
 An intro to FTP can be seen in the following video: [Animated FTP Intro](https://www.youtube.com/watch?v=tOj8MSEIbfA)
 
@@ -152,17 +151,56 @@ The goal is to find the following icon, to create a short cut by right clicking 
 
 #### Summary of import socket (by Tech with Tim) video
 
-In TCP the sockets are required to be a 4-tuple. <br>
-        _e.g. (source IP, source port#, destination IP, destination port)_
+The socket library is very often used to implement communication between a server and client. In the following code you can see an implementation of a simple server and that connects to the local host, receives a message from a client and prints was has received to the user.
 
--   [ ] Review socket.socket() parameters and meaning
+    import socket
 
-    -   [ ]
 
--   Code of the tutorial can be found here: [Sockets Tutorial](https://www.techwithtim.net/tutorials/socket-programming/)
+    PORT = 6000
+    SERVER = socket.gethostbyname(socket.gethostname())
+    ADDR = (SERVER, PORT)
+    server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
+    server.bind(ADDR)
+    server.listen()
+    print(f"[LISTENING] Server is listening on {SERVER}")
+
+    conn, addr = server.accept()
+    print("servers connection is:", conn, "and its address is: ", addr)
+    print("Server waiting to receive: ")
+
+    buffer = 1024
+    msg_recvd = conn.recv(buffer)  # recv data and store in msg
+    print(msg_recvd.decode('utf-8'))
+    print("Server receiverd:")
+    conn.close()
+
+The following code is a simple script the client side:
+
+    import socket
+
+    PORT = 6000
+    CLIENT = socket.gethostbyname(socket.gethostname())  # CLIENT becomes clients ipv4 addrs
+    ADDR = (CLIENT, PORT)
+
+    client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    client.connect(ADDR)
+
+    client.send("Hello World!".encode('utf-8'))
+
+<img src = "FTP_project_images/simplisticServerClientExample.PNG" alt = " " width = 900 />
+
+To Understand the way these programs interacted it is important to know that:
+- In the socket, library AF_INET is for IPv4 and SOCK_Stream is for a tcp socket type (UDP uses SOCKET_DGRAM).
+- server.bind() and server.listen() are function for setting up the server sockets
+- server.accept is a blocking function that waits for the client to initiate a connection through the client.connect(ADDR)
+- server.recv(buffer) is a blocking function that waits for the client to execute a client.send("Hello World!".encode('utf-8'))
+- conn.close() is necessary for efficiency and memory purposes
+
+<!-- Code of the tutorial can be found here: [Sockets Tutorial](https://www.techwithtim.net/tutorials/socket-programming/) -->
+<!--
 #### Summary of import pickle
 
 import pickle ?: [Serialización Piladoras Informaticas](https://www.youtube.com/watch?v=SOimkkfQIOM), [Pickle Real Python](https://www.youtube.com/watch?v=XzkhtWYYojg).
 
-[](https://pythonprogramming.net/sockets-tutorial-python-3/)
+[](https://pythonprogramming.net/sockets-tutorial-python-3/) -->
